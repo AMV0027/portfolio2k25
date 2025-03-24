@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
+import Error from './pages/Error.jsx'
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </BrowserRouter >
         <Footer />

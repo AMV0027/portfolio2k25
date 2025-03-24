@@ -4,6 +4,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaHackerrank } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
+import resume from '../assets/resume/Arunmozhivarman-resume.pdf';
+
 
 function Header() {
     const [burgerMenu, setBurgerMenu] = useState(false);
@@ -60,7 +62,7 @@ function Header() {
                         <a href="#about" className="text-lg font-normal font-poppins hover:text-blue-600 transition-all duration-300">About</a>
                         <a href="#projects" className="text-lg font-normal font-poppins hover:text-blue-600 transition-all duration-300">Projects</a>
                         <a href="#contact" className="text-lg font-normal font-poppins hover:text-blue-600 transition-all duration-300">Contact</a>
-                        <a href="#contact" className="text-lg font-normal font-poppins hover:text-blue-600 transition-all duration-300">Resume</a>
+                        <a href={resume} target='_blank' rel='noreferrer' className="text-lg font-normal font-poppins hover:text-blue-600 transition-all duration-300">Resume</a>
                     </div>
                 </div>
             </div>
@@ -71,7 +73,7 @@ function Header() {
                     <a href="#about" className="text-lg font-normal hover:pl-6 p-4 font-poppins hover:text-blue-600 transition-all ease-in-out duration-500 hover:bg-gray-100">About</a>
                     <a href="#projects" className="text-lg font-normal hover:pl-6 p-4 font-poppins hover:text-blue-600 transition-all ease-in-out duration-500 hover:bg-gray-100">Projects</a>
                     <a href="#contact" className="text-lg font-normal hover:pl-6 p-4 font-poppins hover:text-blue-600 transition-all ease-in-out duration-500 hover:bg-gray-100">Contact</a>
-                    <a href="#contact" className="text-lg font-normal hover:pl-6 p-4 font-poppins hover:text-blue-600 transition-all ease-in-out duration-500 hover:bg-gray-100">Resume</a>
+                    <a href={resume} target='_blank' rel='noreferrer' className="text-lg font-normal hover:pl-6 p-4 font-poppins hover:text-blue-600 transition-all ease-in-out duration-500 hover:bg-gray-100">Resume</a>
                 </div>
             </div>
         </div>

@@ -97,7 +97,7 @@ function Home() {
     return (
         <div className='w-full h-full flex flex-col justify-start'>
             <div className='h-screen overflow-hidden w-full flex flex-col justify-between'>
-                <div className='h-full over w-full p-6 pt-24 flex flex-col justify-between items-center'>
+                <div className='h-full over w-full pt-24 flex flex-col justify-between items-center'>
                     <div className="h-full w-full flex flex-col justify-center">
                         <h1 className='text-center text-2xl sm:text-3xl md:text-4xl font-normal font-unbound'>
                             <span className="md:hidden block">
@@ -117,7 +117,7 @@ function Home() {
                     />
                 </div>
                 <div className='absolute bottom-0 left-0 translate-y-12 w-screen flex flex-col justify-end h-44 items-center'>
-                    <div className="w-full md:max-w-4xl bg-gradient-to-t from-black h-44 "></div>
+                    <div className="w-full md:max-w-4xl bg-gradient-to-t from-black via-black/80  h-52 "></div>
                 </div>
             </div>
             <div className='min-h-screen bg-black w-full'>
@@ -132,7 +132,7 @@ function Home() {
                     <h1 className='text-3xl font-unbound text-white mt-12'>
                         What I Work With
                     </h1>
-                    <div className={`relative w-full ${skillExpand ? 'h-auto' : 'h-[600px]'} overflow-hidden`}>
+                    <div className={`relative w-full ${skillExpand ? 'h-auto' : 'h-[200px]'} overflow-hidden`}>
                         {/* code for the what i work with */}
                         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6'>
                             {skills.map((skill, index) => (
@@ -140,7 +140,7 @@ function Home() {
                             ))}
                         </div>
                         {!skillExpand && (
-                            <div className="md:hidden absolute bottom-0 left-0 w-full h-44 bg-gradient-to-t from-black">
+                            <div className="absolute bottom-0 left-0 w-full h-44 bg-gradient-to-t from-black">
                                 <button
                                     onClick={() => setskillExpand(true)}
                                     className="absolute left-1/2 -translate-x-1/2 bottom-6 text-white font-poppins text-lg flex items-center gap-2 hover:gap-4"
