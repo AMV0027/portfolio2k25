@@ -1,0 +1,50 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: transparent;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.marquee,
+.marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee {
+  animation-name: marquee-right;
+}
+
+.marquee-reverse {
+  animation-name: marquee-left;
+}
+
+/* Pause animation when hovered */
+.marquee-container:hover .marquee,
+.marquee-container:hover .marquee-reverse {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
