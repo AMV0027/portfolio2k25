@@ -1,8 +1,6 @@
 import { React, useState } from 'react'
 import Marquee from '../components/Marquee'
-import { MdArrowOutward } from "react-icons/md"
 import user from '../assets/3d_profile.png'
-import { MdCheckCircle } from "react-icons/md";
 import wss from '../assets/wss.png'
 import firmai from '../assets/firmai.png'
 import gcn from '../assets/gcn.png'
@@ -14,6 +12,7 @@ import ProjectCard from '../components/ProjectCard';
 import { FaArrowDown } from 'react-icons/fa';
 import Achievements from '../components/Acheivements';
 import Contact from '../components/Contact';
+
 
 const skills = [
     { category: "Programming Languages", items: ["Java", "Python", "SQL", "HTML,CSS,JS"] },
@@ -111,17 +110,20 @@ function Home() {
                         <p className='text-center text-sm md:text-xl font-poppins text-white/90'>
                             I'm a full-stack developer. I don't just write code,<br /> I create solutions.
                         </p>
+
                     </div>
                     <img src={user} alt="logo"
-                        className='h-auto  w-xl drop-shadow-[0_0_60px_rgba(10,100,200,1)]'
+                        className='h-auto w-xl drop-shadow-[0_0_60px_rgba(10,100,200,1)]'
                     />
                 </div>
-                <div className='absolute bottom-0 left-0 w-full bg-gradient-to-t from-black p-2 h-24 '></div>
+                <div className='absolute bottom-0 left-0 translate-y-12 w-screen flex flex-col justify-end h-44 items-center'>
+                    <div className="w-full md:max-w-4xl bg-gradient-to-t from-black h-44 "></div>
+                </div>
             </div>
             <div className='min-h-screen bg-black w-full'>
                 <Marquee />
                 <div className='p-6'>
-                    <h1 className='text-3xl font-unbound text-white mt-6 mb-6'>
+                    <h1 className='text-3xl font-unbound text-white mt-6 mb-6' id="about">
                         About Me ?
                     </h1>
                     <p>
@@ -130,7 +132,7 @@ function Home() {
                     <h1 className='text-3xl font-unbound text-white mt-12'>
                         What I Work With
                     </h1>
-                    <div className={`relative w-full ${skillExpand ? 'h-auto' : 'h-[600px]'} md:h-auto`}>
+                    <div className={`relative w-full ${skillExpand ? 'h-auto' : 'h-[600px]'} overflow-hidden`}>
                         {/* code for the what i work with */}
                         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6'>
                             {skills.map((skill, index) => (
@@ -148,7 +150,7 @@ function Home() {
                             </div>
                         )}
                     </div>
-                    <h1 className='text-3xl font-unbound text-white mt-12 mb-6'>Projects</h1>
+                    <h1 className='text-3xl font-unbound text-white mt-12 mb-6' id="projects">Projects</h1>
                     <div className={`relative w-full overflow-hidden ${projectExpand ? 'h-auto' : 'h-screen'}`}>
                         <div className={`grid grid-cols-1 gap-6 transition-all duration-500 ${projectExpand ? 'pb-10' : ''}`}>
                             {projects.map((project, index) => (
@@ -177,7 +179,7 @@ function Home() {
                     <Achievements />
                     <Contact />
                 </div>
-            </div>
+            </div >
         </div >
     )
 }

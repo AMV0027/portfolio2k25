@@ -3,11 +3,11 @@ import { MdArrowOutward } from "react-icons/md"
 
 const ProjectCard = ({ name, description, techstack = [], links, image }) => {
     return (
-        <div className="w-full p-4 flex flex-col justify-start border border-zinc-700 rounded-md bg-white/5 transition-transform duration-300 overflow-hidden">
+        <div className="w-full p-4 flex flex-col justify-start border border-zinc-700 hover:border-blue-500 hover:scale-95 rounded-md bg-white/5 transition-transform duration-300 overflow-hidden">
             <img
                 src={links.preview}
                 alt={`${name} preview`}
-                className="w-full aspect-video object-contain object-center drop-shadow-xl bg-white rounded-xl mb-6"
+                className="w-full aspect-video object-contain object-center drop-shadow-xl bg-white rounded-xl mb-6 hover:rotate-2 hover:scale-95 transition-transform duration-300"
             />
             <h2 className="text-lg font-unbound text-white mb-2">{name}</h2>
             <p className="text-sm text-white/80 mb-3">{description}</p>

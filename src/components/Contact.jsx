@@ -27,7 +27,7 @@ function Contact() {
     };
 
     return (
-        <div>
+        <div id='contact'>
             <h2 className="text-4xl font-unbound text-center mb-8 mt-12">Contact</h2>
 
             <form onSubmit={onSubmit}
