@@ -13,6 +13,7 @@ import SkillCard from '../components/SkillCard';
 import ProjectCard from '../components/ProjectCard';
 import { FaArrowDown } from 'react-icons/fa';
 import Achievements from '../components/Acheivements';
+import Contact from '../components/Contact';
 
 const skills = [
     { category: "Programming Languages", items: ["Java", "Python", "SQL", "HTML,CSS,JS"] },
@@ -174,6 +175,7 @@ function Home() {
                         )}
                     </div>
                     <Achievements />
+                    <Contact />
                 </div>
             </div>
         </div >

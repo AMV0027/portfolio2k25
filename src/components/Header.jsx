@@ -7,7 +7,7 @@ function Header() {
     const [burgerMenu, setBurgerMenu] = useState(false);
 
     return (
-        <div className="md:max-w-4xl fixed top-0 z-50 w-full bg-transparent backdrop-blur-xl border-b-1 border-sky-400">
+        <div className="md:max-w-4xl fixed top-0 z-50 w-full bg-transparent backdrop-blur-lg border-b-1 border-blue-500">
             <div className="w-full flex flex-row justify-between items-center px-4 py-2">
                 <div className="flex flex-row items-center gap-1">
                     <img src={logo} alt="logo" className="h-8 w-8" />
