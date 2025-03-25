@@ -14,9 +14,9 @@ function Header() {
         <div className="md:max-w-4xl fixed top-0 z-50 w-full bg-transparent backdrop-blur-lg border-b-1 border-blue-500">
             <div className="w-full flex flex-row justify-between items-center px-4 py-2">
                 <div className="flex flex-row items-center gap-1">
-                    <img src={logo} alt="logo" className="h-8 w-8" />
-                    <p className="text-xl font-normal font-poppins">ArunMozhi Varman</p>
-                    <div className="flex justify-center items-center gap-2 ml-4">
+                    <img src={logo} alt="logo" className="h-4 w-4 md:h-8 md:w-8" />
+                    <p className="text-sm md:text-xl font-normal font-poppins">ArunMozhi Varman</p>
+                    <div className="flex justify-center items-center gap-2 ml-2 md:ml-4">
                         <a
                             href="https://github.com/AMV0027"
                             target="_blank"
