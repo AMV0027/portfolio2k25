@@ -18,8 +18,8 @@ const skills = [
     { category: "Programming Languages", items: ["Java", "Python", "SQL", "HTML,CSS,JS"] },
     { category: "Frontend Development", items: ["React JS", "Next JS", "Tailwind CSS"] },
     { category: "Backend Development", items: ["Node.js", "Express.js", "APIs"] },
-    { category: "AI/ML & Prompt Engineering", items: ["Generative AI", "LLM", "Synthetic Data"] },
-    { category: "Databases & Tools", items: ["PostgreSQL", "pgvector", "Firebase", "MQTT Protocol", "AWS"] },
+    { category: "AI/ML & Prompt Engineering", items: ["OpnAI", "Ollama", "RAG", "GPT Wrapper"] },
+    { category: "Databases & Tools", items: ["SQL", "PostgreSQL", "Firebase", "AWS"] },
     { category: "Design & Visualization", items: ["Figma", "Adobe Illustrator", "RIVE", "Blender 3D"] }
 ];
 
